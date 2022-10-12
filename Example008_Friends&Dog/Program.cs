@@ -4,7 +4,7 @@ int firstFriendSpeed = 1;
 int secondFriendSpeed = 2;
 int dogSpeed = 5;
 int friend = 2;
-int time = 1;
+int time = 0;
 
  while (distance > 10)
 {
