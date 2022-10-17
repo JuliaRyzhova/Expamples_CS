@@ -22,9 +22,30 @@ void PrintArray(int [] col)
     }
 }
 
+int IndexOf(int [] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1; // если искомого числа нет в массиве, то вернет значение индекса -1. Если оставить 0, то это неправильно.
+
+    while (index < count)
+    {
+        if(collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+
 int [] array = new int [10]; // new int [10] - оператор создающий новый массив из 10 эл-ов
 
 FillArray(array); // метод, заполняющий массив
 PrintArray(array); //метод, выводящий массив на печать
 
+Console.WriteLine( );
 
+int pos = IndexOf(array, 14); // вводим переменную, которая выводит результат метода IndexOf
+Console.WriteLine(pos);
