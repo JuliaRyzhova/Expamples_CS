@@ -1,6 +1,7 @@
 ﻿// Создаем метод заполняющий массив путем рандомного подбора чисел.
 // Создаем метод выводящий созданный массив
 // Находим индекс искомого числа
+/*
 void FillArray(int [] collection)
 {
     int lenght = collection.Length;
@@ -51,3 +52,4 @@ Console.WriteLine( );
 
 int pos = IndexOf(array, 14); // вводим переменную, которая выводит результат метода IndexOf
 Console.WriteLine(pos);
+*/
